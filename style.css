@@ -1,0 +1,491 @@
+@charaset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 共通の設定 */
+html, body {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #222;
+}
+
+ul,ol li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+#wrap {
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: #ffffdb;
+}
+
+#subtitle {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#subtitle p {
+	padding-left: 25px;
+}
+
+#main_container, .other_pickup {
+	width: 1200px;
+	display: flex;
+	padding: 50px 0;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+h2 {
+	margin-bottom: 20px;
+	border-left: 10px solid #ff8c00;
+	padding: 5px;
+	text-indent: 0.5em;
+	font-size: 24px;
+}
+
+h3 {
+	background-color: #ffa07a;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-indent: 0.5em;
+	font-size: 24px;
+}
+
+ol.breadcrumb {
+	padding: 5px 0 5px 50px;
+	height: 20px;
+	margin-bottom: 50px;
+	list-style-type: none;
+	display:flex;
+	background-color: #ffff7f;
+	color: #800000;
+	font-size: 16px;
+}
+
+ol.breadcrumb li::after {
+	content: ">";
+	margin: 0 10px;	
+}
+
+ol.breadcrumb li:last-child::after {
+	content: none;
+}
+
+ol.breadcrumb li {
+	line-height: 20px;
+}
+/* headerの設定 */
+header {
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	padding: 0 25px;
+	background-color: #ffa500;
+	color: #800000;
+}
+
+h1 a {
+	line-height: 70px;
+	color: #800000;
+}
+
+h1 a:hover {
+	color: #800000;
+}
+
+h1 {
+	line-height: 70px;
+}
+
+nav ul li {
+	float: left;
+	line-height: 70px;
+	margin: 0 0.5em;
+	color: #800000;
+}
+
+nav ul li a {
+	display: block;
+	padding: 0px 5px;
+	text-align: center;
+	color: #800000;
+}
+
+/* footerの設定 */
+footer {
+	text-align: center;
+	background-color: #ffffdb;
+	color: #800000;
+}
+
+footer a {
+	color: #00008b;
+}
+
+footer a:link {
+	color: #00008b;
+}
+
+.retern {
+	display: block;
+	text-align: right;
+	padding: 10px 20px 10px 0;
+	height: 30px;
+}
+
+.retern a {
+	color: #00008b;
+}
+
+.retern a:link {
+	color: #00008b;
+}
+
+.union {
+	border-top: 1px solid #ffa500;
+	color: #222;
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+adress {
+	font-size: 14px;
+	color: #222;
+}
+
+small {
+	display: block;
+	background-color: #ffa500;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+/* mainの設定 */
+.explanation {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	text-justify: auto;
+	width: 650px;
+}
+
+.explanation a {
+	color: #00008b;
+}
+
+.explanation a:link {
+	color: #00008b;
+}
+
+.explanation P {
+	margin: 1em 0px;
+}
+
+/* トップページ */
+/* ファーストビュー */
+.catch {
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.catch img {
+	width: 100%;
+	opacity: 0.8;
+	vertical-align: bottom;	
+}
+
+.catch p {
+	position: absolute;
+	top: 150px;
+	left: 450px;
+	width: 600px;
+	height:40px;
+	font-size: 20px;
+	padding: 1px;
+	text-align: center;
+	line-height: 40px;
+	background-color: white;
+}
+
+.welcome {
+	font-size: 24px;
+	text-align: center;
+	background-color: #ffff7f;
+	color: #800000;
+	padding: 5px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	letter-spacing: 0.1em;
+}
+
+/* 新着情報 */
+.news {
+	width: 270px;
+}
+
+.news h2 {
+	border-left: 10px solid red;
+
+}
+
+.news_box {
+	height: 580px;
+	padding: 10px;
+	background-color: #ffead6;
+	box-sizing: border-box;
+}
+
+.news_box dd {
+	margin-bottom: 20px;
+}
+
+.news_box a {
+	margin-bottom: 20px;
+	color: #00008b;
+}
+
+/* ピックアップ品 */
+.pickup {
+	width: 880px;
+	box-sizing: border-box;
+}
+
+.items_box1 {
+	display: flex;
+	width: 880px;
+	margin-bottom: 20px;
+	height: 280px;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.items_box2 {
+	display: flex;
+	width: 880px;
+	height: 280px;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.item {
+	width: 280px;
+	height: 280px;
+	background-color: white;
+	border: 1px solid #ffa07a;
+}
+
+.item img {
+	width: 280px;
+}
+
+.item p {
+	padding: 5px;
+}
+
+.item_4 {
+	margin-right: 5px;
+}
+
+.item_5 {
+	margin-left: 12px;
+}
+
+.items_box1 .item:last-child {
+	color: #191970;
+}
+
+.items_box1 a:link {
+	color: #191970;
+}
+
+.items_box1 a {
+	color: #191970;
+}
+
+.items_box2 a:link {
+	color: #191970;
+}
+
+.items_box2 a {
+	color: #191970;
+}
+
+.shop_name {
+	display: block;
+	margin-top: 15px;
+	color: #cd5c5c;
+	font-size: 16px;
+}
+
+/* 今月のピックアップ品ページの設定*/
+.photo img{
+	width: 500px;
+	height: 300px;
+}
+
+/* 店舗情報*/
+.shop_info {
+	width: 1200px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+h4 {
+	margin-left: 250px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 700px;
+	height: 150px;
+	padding: 0 50px;
+	margin-left: 250px;
+	background-color: #fff;
+}
+
+th {
+	border-bottom: 1px solid #a9a9a9;
+	width: 200px;
+	text-align: left;
+	text-indent: 0.5em;
+	letter-spacing: 0.1em;
+	padding: 5px;
+	font-size: 16px;
+	background-color: #ffead6;
+}
+
+td {
+	border-bottom: 1px solid #a9a9a9;
+	text-indent: 0.5em;
+	padding: 5px;
+}
+
+table a {
+	color: #00008b;
+}
+
+table a:link {
+	color: #00008b;
+}
+
+/* 他のピックアップ品もみるの設定*/
+.other_page {
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.other_pickup {
+	padding-top: 30px;
+	justify-content: space-between;
+}
+
+.other_pickup a:link {
+	color: #191970;
+}
+
+.other_pickup a {
+	color: #191970;
+}
+
+/* イベントページの設定 */
+.movie {
+	width: 500px;
+	height: 300px;
+}
+
+/* お問い合わせページの設定 */
+.contactform dl {
+	width: 1000px;
+	border-top: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	margin-bottom: 30px;
+} 
+
+.contactform dt {
+	float: left;
+	padding: 1em;
+	color: #998484;
+}
+
+.contactform dd {
+	border-bottom: 1px solid #cccccc;
+	margin: 0;
+	padding: 1em 0 1em 18em;
+}
+
+contactform dt .must {
+	color: #d23939;
+}
+
+input[type="email"] {
+	width: 50%;
+}
+
+input {
+	font-size: 1em;
+	padding: 5px;
+}
+
+label {
+	margin-right: 1em;
+}
+
+select {
+	font-size: 1em;
+}
+
+textarea {
+	width: 30em;
+	font-size: 1em;
+	padding: 5px;
+}
+
+p.submit {
+	text-align: center;
+
+}
+
+input[type="submit"] {
+	padding: 20px 100px;
+	background-color: #ffff7f;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	opacity: 0.8;
+}
+
+form {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.must {
+	color: #d23939;
+}
