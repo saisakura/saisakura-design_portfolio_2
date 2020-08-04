@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+	<title>お問い合わせ</title>
+</head>
+<body>
+	<header id="top">
+		<h1><a href="index.html">KITAGAWA Shopping Street</a></h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">トップ</a></li>
+				<li><a href="index.html#pickup_menu">今月のピックアップ品</a></li>
+				<li><a href="event.html">イベント</a></li>
+				<li>お問い合わせ</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="wrap">
+			<ol class="breadcrumb">
+				<li><a href="index.html">トップ</a></li>
+				<li>今月のピックアップ品</li>
+			</ol>
+			<div id="subtitle">
+				<h2>お問い合わせ</h2>
+				<p>お客様情報とお問い合わせ内容のご入力をお願いいたします。</p>
+				<p>24時間以内にご返信いたしますので、今しばらくお待ちいただきますようお願い申し上げます。</p>
+			</div>
+			<form action="program.php" method="post">
+				<div class="contactform">
+					<dl>
+						<dt>お名前<span class="must">※</span></dt>
+						<dd>
+							<input type="text" name="name" required placeholder="田中　太郎">
+						</dd>
+						<dt>ふりがな<span class="must">※</span></dt>
+						<dd>
+							<input type="text" name="kana" required placeholder="たなか　たろう">
+						</dd>
+						<dt>電話番号<span class="must">※</span></dt>
+						<dd>
+							<input type="text" name="tel" required placeholder="080-1234-5678">
+						</dd>
+						<dt>メールアドレス<span class="must">※</span></dt>
+						<dd>
+							<input type="email" name="email" required placeholder="sample@test.com">
+						</dd>
+						<dt>性別</dt>
+						<dd>
+							<label><input type="radio" name="sex" value="男">男</label>
+							<label><input type="radio" name="sex" value="女">女</label>
+						</dd>
+						<dt>お問い合わせ内容</dt>
+						<dd>
+							<textarea name="comment" cols="20" rows="5"></textarea>
+						</dd>
+					</dl>
+					<p class="submit"><input type="submit" name="submit" value="送信する"></p>
+				<div>
+			</form>
+		</main>
+	<footer>
+		<p class="retern"><a href="#top">ページTOPへ</a></P>
+		<p class="union">喜多川商店街振興組合</p>
+		<adress>
+			<p>〒133-0057 東京都江戸川区西小岩X-XX-X</p>
+			<p><a href="mailto:info@sample.com">kitagawa@kitagawa.xx.xx</a></p>
+		</adress>
+		<p><small>Copyright&copy;2015 喜多川商店街振興組合 All Rights Reserved.</small></p>
+	</footer>
+</body>
+</html>
